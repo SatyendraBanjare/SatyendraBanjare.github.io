@@ -4,7 +4,7 @@ email:       satyendrabanjare99@gmail.com
 author:      Satyendra Banjare
 description: ""
 baseurl:     ""
-url:         ""
+url:         "https://satyendra-iitr.github.io/"
 date_format: "%b %-d, %Y"
 header_pages:
  - about.md
