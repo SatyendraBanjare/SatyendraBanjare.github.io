@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/s4ty3ndr4
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://satyendra-iitr.github.io
+  * I am s4ty3ndr4 (https://keybase.io/s4ty3ndr4) on keybase.
+  * I have a public key ASDgZnZohreN1GBzNwtM42SnKcglNMv60vQdHK6FZ1XnmAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120e066766886b78dd46073370b4ce364a729c82534cbfad2f41d1cae856755e7980a",
+      "host": "keybase.io",
+      "kid": "0120e066766886b78dd46073370b4ce364a729c82534cbfad2f41d1cae856755e7980a",
+      "uid": "3465e91b6a73497cd477e7f8a0902219",
+      "username": "s4ty3ndr4"
+    },
+    "merkle_root": {
+      "ctime": 1502659088,
+      "hash": "a9c1934634724dc8ac23f065f0c2b7bd9f25e07a5adba62a083ada9ae9fd4265eefe7422eafab5928f3aa55241915ec21b5f34b0a88b5b92d0f2a90eed749331",
+      "hash_meta": "523126350bc79b60ff641abc7f1441a80436c9caa0181cba2a235e65b175dad2",
+      "seqno": 1323780
+    },
+    "service": {
+      "hostname": "satyendra-iitr.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.27"
+  },
+  "ctime": 1502659096,
+  "expire_in": 504576000,
+  "prev": "66c8a1bc1cad6e081d01e9cbddde35578369540cf81502183cd0f1b921976aeb",
+  "seqno": 8,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg4GZ2aIa3jdRgczcLTONkpynIJTTL+tL0HRyuhWdV55gKp3BheWxvYWTFA1F7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwZTA2Njc2Njg4NmI3OGRkNDYwNzMzNzBiNGNlMzY0YTcyOWM4MjUzNGNiZmFkMmY0MWQxY2FlODU2NzU1ZTc5ODBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwZTA2Njc2Njg4NmI3OGRkNDYwNzMzNzBiNGNlMzY0YTcyOWM4MjUzNGNiZmFkMmY0MWQxY2FlODU2NzU1ZTc5ODBhIiwidWlkIjoiMzQ2NWU5MWI2YTczNDk3Y2Q0NzdlN2Y4YTA5MDIyMTkiLCJ1c2VybmFtZSI6InM0dHkzbmRyNCJ9LCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTUwMjY1OTA4OCwiaGFzaCI6ImE5YzE5MzQ2MzQ3MjRkYzhhYzIzZjA2NWYwYzJiN2JkOWYyNWUwN2E1YWRiYTYyYTA4M2FkYTlhZTlmZDQyNjVlZWZlNzQyMmVhZmFiNTkyOGYzYWE1NTI0MTkxNWVjMjFiNWYzNGIwYTg4YjViOTJkMGYyYTkwZWVkNzQ5MzMxIiwiaGFzaF9tZXRhIjoiNTIzMTI2MzUwYmM3OWI2MGZmNjQxYWJjN2YxNDQxYTgwNDM2YzljYWEwMTgxY2JhMmEyMzVlNjViMTc1ZGFkMiIsInNlcW5vIjoxMzIzNzgwfSwic2VydmljZSI6eyJob3N0bmFtZSI6InNhdHllbmRyYS1paXRyLmdpdGh1Yi5pbyIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjI3In0sImN0aW1lIjoxNTAyNjU5MDk2LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwicHJldiI6IjY2YzhhMWJjMWNhZDZlMDgxZDAxZTljYmRkZGUzNTU3ODM2OTU0MGNmODE1MDIxODNjZDBmMWI5MjE5NzZhZWIiLCJzZXFubyI6OCwidGFnIjoic2lnbmF0dXJlIn2jc2lnxECFA8vNm6aJh5MuiDi+Z8+tZORbCRTKQapS1tSLFT/jhMcSukkObP50DHYQnH4mPGj/voUQ79p1rfRa4bFjUFUOqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgDev4N0w8QfBPxBzP1O9hYsxJRmPxxLPIj0VyTiTpNwyjdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/s4ty3ndr4
+
+==================================================================
