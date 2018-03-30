@@ -18,12 +18,14 @@ html, body {
   min-height: 100%;
 }
 
-img {
-  max-width: 100%;
+img { 
+  width: 100%;
+  fill: context-fill;
 }
 
 em img {
-  max-width: 100%;
+  width: 100%;
+  fill: context-fill;
   margin-left: 0;
 }
 
