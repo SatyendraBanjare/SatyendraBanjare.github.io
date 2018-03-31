@@ -13,7 +13,7 @@ This is a complete flowchart of underlying operations performed.
 
 <img src="{{ site.baseurl }}/images/HomeAutomationflowdiagram.png" alt="Couldn't Load Image" />
 
-So clearly the three tasks of development are :
+So clearly the important tasks of development are :
 1. [Making Django Server ](#making-a-django-server)
   * [make login-out system](#make-login-logout-system)
   * [make model structure](#making-complete-model-structure)
@@ -495,7 +495,7 @@ Now the project should be working fine. Visit the project's site to view it in a
 ## Connecting Pi to Server
 For now we are simply connecting raspberry pi to Server and looping through to update the data every second. 
 
-_(NOTE : This functionality however should be upgraded to make asynchronous calls. I have some part of this done at https://github.com/SatyendraBanjare/Project-HomeAutomation )_
+_(NOTE : This functionality however should be upgraded to make asynchronous calls. I have some part of this done at Advanced-Feature-Branch on  https://github.com/SatyendraBanjare/Project-HomeAutomation )_
 
 
 install some dependencies in raspberry using:
