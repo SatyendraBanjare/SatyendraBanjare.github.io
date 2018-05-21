@@ -5,4 +5,25 @@ permalink: /archive/
 tags: archive
 ---
 
-archive
+{% for post in site.posts %}
+  {% capture categories %}{{post.categories }}{% endcapture %}
+  {% if categories == "gsoc18_report" %}
+    <h2>GSoC'18 Reports</h2>
+    {% capture year %}{{currentyear}}{% endcapture %} 
+  <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><p>{{ post.title }}</a> <ran style="color:#aaa;font-size:0.8em;">({{post.date | date_to_string}})</ran></p>
+  {% endif %}   
+{% endfor %}
+
+{% for post in site.posts %}
+  {% capture currentyear %}{{post.date | date: "%Y"}}{% endcapture %}
+  {% if currentyear != year %}
+    <h2>{{ currentyear }}</h2>
+    {% capture year %}{{currentyear}}{% endcapture %} 
+  {% endif %}
+  {% capture categories %}{{post.categories }}{% endcapture %}
+  {% if categories != "gsoc18_report" %}
+    {% capture year %}{{currentyear}}{% endcapture %} 
+  <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><p>{{ post.title }}</a> <ran style="color:#aaa;font-size:0.8em;">({{post.date | date_to_string}})</ran></p>
+  {% endif %} 
+{% endfor %}
+
