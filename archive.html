@@ -5,10 +5,10 @@ permalink: /archive/
 tags: archive
 ---
 
+<h2>GSoC'18 Reports</h2>
 {% for post in site.posts %}
   {% capture categories %}{{post.categories }}{% endcapture %}
   {% if categories == "gsoc18_report" %}
-    <h2>GSoC'18 Reports</h2>
     {% capture year %}{{currentyear}}{% endcapture %} 
   <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><p>{{ post.title }}</a> <ran style="color:#aaa;font-size:0.8em;">({{post.date | date_to_string}})</ran></p>
   {% endif %}   
