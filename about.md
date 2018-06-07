@@ -1,9 +1,11 @@
 ---
-layout: default
+layout: center
 title: About
 ---
+<p style="padding-top: 10%;padding-bottom: 5%;" >
+  <img src="{{ site.baseurl }}/images/profile.jpg" style="height:250px; width: auto ; border-radius: 50%" />
+</p>
 
-<h2>About</h2>
   <p>
     I am Satyendra Kumar Banjare 3rd year Electrical Engineering undergraduate student at IIT Roorkee. My current interests are web and software development and security analysis. 
   </p>
