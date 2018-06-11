@@ -4,7 +4,7 @@ email:       satyendrabanjare99@gmail.com
 author:      Satyendra Banjare
 description: ""
 baseurl:     ""
-url:         "https://satyendrabanjare.github.io/"
+url:         "https://satyendrabanjare.github.io"
 date_format: "%b %-d, %Y"
 header_pages:
  - about.md
@@ -97,7 +97,7 @@ markdown:     kramdown
 redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data']
 permalink:    pretty
-paginate:     3
+paginate:     5
 sass:
   style: compressed
 plugins:
