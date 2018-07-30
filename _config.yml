@@ -8,10 +8,10 @@ url:         "https://satyendrabanjare.github.io"
 date_format: "%b %-d, %Y"
 header_pages:
  - about.md
- - contact.html
+ - typetheory.md
+ - projects.html
  - archive.html
-
-
+ - contact.html
 
 # Disqus post comments
 # (leave blank to disable Disqus)
