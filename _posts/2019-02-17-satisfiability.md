@@ -23,4 +23,16 @@ Recently [Urmila Mahadev](https://simons.berkeley.edu/people/urmila-mahadev) the
 
 ### Algorithms
 
-### Coq formalization
+The most common algorithm is called **DPLL algorithm** that works as a conflict-driven learning algorithm. The other popular but randomized algorithm is called **PPSZ aLgorithm**.
+
+- **DPLL Algorithm** 
+	+ It involves performing a DFS through space of possible assignments for conjuctive sets and stops if statifiability is found or all options have been tested.
+	+ Optimizations can be performed by skipping the branches where no satisfying assignments occur and looking for the maximum 'search space' .
+	+ Conflict analysis is done and those clauses that are not rooted are removed or are not searched. 
+
+### Formalization
+
+There has been quite a few Coq formalization done that can be looked up. Here I am sharing onw done by Prof. Adam Chlipala as a part of his course Interactive Theorem Proving [link](https://github.com/SatyendraBanjare/itp/blob/master/SAT_SOLVER.v).
+
+Over the years Proof-assistant based SMT-SAT solvers have been researched upon. example : [Z3 Theorem prover](https://github.com/Z3Prover/z3) , [SMT coq](https://smtcoq.github.io/).
+
