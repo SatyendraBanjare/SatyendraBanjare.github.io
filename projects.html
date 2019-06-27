@@ -9,7 +9,8 @@ tags: projects
 	{% for project in site.data.projects %}
 	<div class="wall-column">
 		<div class="wall-item" >  
-		    <div class="card-group">
+			<a href="https://github.com/{{ project.github.user }}/{{ project.github.repo }}">
+				<div class="card-group">
 				<div class="card">
 				    <div class="card-image" id="colorpad" style="height: 100%;">
 				    	<div style="margin: 2%; background-color: white;"></div>
@@ -18,10 +19,11 @@ tags: projects
 				    <p>
 				    	{{ project.description }}
 				    </p>
-				    <a class="github-button" href="https://github.com/{{ project.github.user }}/{{ project.github.repo }}" data-size="large" data-show-count="true" data-icon="octicon-star" aria-label="Star {{ project.github.user }}/{{ project.github.repo }} on GitHub">Star</a>
+				    <!-- <a class="github-button" href="https://github.com/{{ project.github.user }}/{{ project.github.repo }}" data-size="large" data-show-count="true" data-icon="octicon-star" aria-label="Star {{ project.github.user }}/{{ project.github.repo }} on GitHub">Star</a> -->
 				      <!-- <iframe src="https://ghbtns.com/github-btn.html?user={{ project.github.user }}&repo={{ project.github.repo }}&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px" style="margin-left: 3%;margin-bottom: 3%;"></iframe> -->
 				</div>
 			</div>
+			</a>
 	    </div>
    </div>
    {% endfor %}

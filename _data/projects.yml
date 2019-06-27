@@ -18,27 +18,9 @@
 
 - name: "Satisfy"
   github:
-    repo: "C-LLVM-compiler"
+    repo: "Satisfy"
     user: "SatyendraBanjare"
     plt: "true"
-  url: "https://SatyendraBanjare.github.io/C-LLVM-compiler"
-  source_url: "https://github.com/SatyendraBanjare/C-LLVM-compiler"
-  description: C to LLVM compiler.
-
-- name: "C-LLVM Compiler"
-  github:
-    repo: "C-LLVM-compiler"
-    user: "SatyendraBanjare"
-    plt: "true"
-  url: "https://SatyendraBanjare.github.io/C-LLVM-compiler"
-  source_url: "https://github.com/SatyendraBanjare/C-LLVM-compiler"
-  description: C to LLVM compiler.
-
-- name: "C-LLVM Compiler"
-  github:
-    repo: "C-LLVM-compiler"
-    user: "SatyendraBanjare"
-    plt: "true"
-  url: "https://SatyendraBanjare.github.io/C-LLVM-compiler"
-  source_url: "https://github.com/SatyendraBanjare/C-LLVM-compiler"
-  description: C to LLVM compiler.
+  url: "https://SatyendraBanjare.github.io/Satisfy"
+  source_url: "https://github.com/SatyendraBanjare/Satisfy"
+  description: A Simple SAT solver based on DPLL algorithm.

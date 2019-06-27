@@ -45,12 +45,12 @@ Here are some of my experiences and findings on the topics
     </td>
     <td><a href="https://github.com/SatyendraBanjare/MIT-Abstract-Interpretation-16.399">Abstract Interpretation</a></td> 
   </tr>
-  <tr>
-	<td>Understanding Computation</td>
+  <!-- <tr>
+	  <td>Understanding Computation</td>
     <td>short compiled notes for this book by XYZ.</td>
     <td><a href="https://github.com/SatyendraBanjare/MIT-Abstract-Interpretation-16.399">Abstract Interpretation</a></td> 
-  </tr>
-  <tr>
+  </tr> -->
+  <!-- <tr>
 	<td>Differential Privacy</td>
     <td>short compiled notes for this book by XYZ.</td>
     <td><a href="https://github.com/SatyendraBanjare/MIT-Abstract-Interpretation-16.399">Abstract Interpretation</a></td> 
@@ -64,7 +64,7 @@ Here are some of my experiences and findings on the topics
 	<td>Verified ML</td>
     <td>short compiled notes for this book by XYZ.</td>
     <td><a href="https://github.com/SatyendraBanjare/MIT-Abstract-Interpretation-16.399">Abstract Interpretation</a></td> 
-  </tr>
+  </tr> -->
 </table>
 
 
