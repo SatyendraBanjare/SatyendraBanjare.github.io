@@ -3,17 +3,19 @@
   <div class="left">
     {% if paginator.previous_page %}
       {% if paginator.page == 2 %}
-        <a class="pagination-item" href="{{ site.baseurl }}/">{{ site.text.pagination.newer }}</a>
-      {% else %}
-        <a class="pagination-item" href="{{ paginator.previous_page_path }}">{{ site.text.pagination.newer }}</a>
+        <a class="pagination-item" href="{{ site.baseurl }}/"><i class="fa fa-angle-left" style="font-size:50px"></i> {{ site.text.pagination.newer }}</a>
       {% endif %}
+      {% if paginator.page >= 3 %}
+        <a class="pagination-item" href="{{ paginator.previous_page_path }}/"><i class="fa fa-angle-left" style="font-size:50px"></i> {{ site.text.pagination.newer }}</a>
+      {% endif %}
+      
     {% else %}
       <span class="pagination-item disabled">{{ site.text.pagination.newer }}</span>
     {% endif %}
   </div>
   <div class="right">
     {% if paginator.next_page %}
-      <a class="pagination-item" href="{{ paginator.next_page_path }}">{{ site.text.pagination.older }}</a>
+      <a class="pagination-item" href="{{ paginator.next_page_path }}"><i class="fa fa-angle-right" style="font-size:50px; position: center;" ></i>{{ site.text.pagination.older }}</a>
     {% else %}
       <span class="pagination-item disabled">{{ site.text.pagination.older }}</span>
     {% endif %}

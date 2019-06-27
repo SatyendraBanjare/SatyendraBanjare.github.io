@@ -14,11 +14,13 @@ Here are some of my experiences and findings on the topics
 
 <h2>Readings</h2>
 
-<table style="width:100%">
+
+<table id="plt-table" style="width:100%">
   <tr>
-  	<th>Name</th>
+  	<th>Name/Topic</th>
     <th>Description</th>
     <th>Link(s)</th> 
+    <th>Other Link(s)</th>
   </tr>
   <tr>
   	<td>Type Theory Notes</td>
@@ -38,9 +40,29 @@ Here are some of my experiences and findings on the topics
     <td><a href="https://github.com/SatyendraBanjare/itp">ITP Solutions link</a></td> 
   </tr>
   <tr>
-  <td>Interactive THeorem Proving</td>
+  <td>Abstract Interpretation</td>
     <td>I was reading about Abstract Interpretation,following this <a href="http://web.mit.edu/afs/athena.mit.edu/course/16/16.399/www/">slides</a>  and compiled short notes on the same which can be found here .
     </td>
+    <td><a href="https://github.com/SatyendraBanjare/MIT-Abstract-Interpretation-16.399">Abstract Interpretation</a></td> 
+  </tr>
+  <tr>
+	<td>Understanding Computation</td>
+    <td>short compiled notes for this book by XYZ.</td>
+    <td><a href="https://github.com/SatyendraBanjare/MIT-Abstract-Interpretation-16.399">Abstract Interpretation</a></td> 
+  </tr>
+  <tr>
+	<td>Differential Privacy</td>
+    <td>short compiled notes for this book by XYZ.</td>
+    <td><a href="https://github.com/SatyendraBanjare/MIT-Abstract-Interpretation-16.399">Abstract Interpretation</a></td> 
+  </tr>
+  <tr>
+	<td>Verified Quantum Systems</td>
+    <td>short compiled notes for this book by XYZ.</td>
+    <td><a href="https://github.com/SatyendraBanjare/MIT-Abstract-Interpretation-16.399">Abstract Interpretation</a></td> 
+  </tr>
+  <tr>
+	<td>Verified ML</td>
+    <td>short compiled notes for this book by XYZ.</td>
     <td><a href="https://github.com/SatyendraBanjare/MIT-Abstract-Interpretation-16.399">Abstract Interpretation</a></td> 
   </tr>
 </table>

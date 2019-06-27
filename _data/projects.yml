@@ -2,7 +2,7 @@
   github:
     repo: "luagit2"
     user: "SatyendraBanjare"
-    plt: "true"
+    plt:
   url: "https://SatyendraBanjare.github.io/luagit2/"
   source_url: "https://github.com/SatyendraBanjare/luagit2"
   description: Tool to do do Git things in Lua. Developed using Lua-C API.
@@ -11,32 +11,34 @@
   github:
     repo: "C-LLVM-compiler"
     user: "SatyendraBanjare"
+    plt: "true"
   url: "https://SatyendraBanjare.github.io/C-LLVM-compiler"
   source_url: "https://github.com/SatyendraBanjare/C-LLVM-compiler"
   description: C to LLVM compiler.
 
 - name: "Satisfy"
   github:
-    repo: "luagit2"
+    repo: "C-LLVM-compiler"
     user: "SatyendraBanjare"
-  url: "https://SatyendraBanjare.github.io/luagit2/"
-  source_url: "https://github.com/SatyendraBanjare/luagit2"
-  description: Tool to do do Git things in Lua. Developed using Lua-C API.
+    plt: "true"
+  url: "https://SatyendraBanjare.github.io/C-LLVM-compiler"
+  source_url: "https://github.com/SatyendraBanjare/C-LLVM-compiler"
+  description: C to LLVM compiler.
 
-
-- name: "Luagit2"
+- name: "C-LLVM Compiler"
   github:
-    repo: "luagit2"
+    repo: "C-LLVM-compiler"
     user: "SatyendraBanjare"
-  url: "https://SatyendraBanjare.github.io/luagit2/"
-  source_url: "https://github.com/SatyendraBanjare/luagit2"
-  description: Tool to do do Git things in Lua. Developed using Lua-C API.
+    plt: "true"
+  url: "https://SatyendraBanjare.github.io/C-LLVM-compiler"
+  source_url: "https://github.com/SatyendraBanjare/C-LLVM-compiler"
+  description: C to LLVM compiler.
 
-
-- name: "Luagit2"
+- name: "C-LLVM Compiler"
   github:
-    repo: "luagit2"
+    repo: "C-LLVM-compiler"
     user: "SatyendraBanjare"
-  url: "https://SatyendraBanjare.github.io/luagit2/"
-  source_url: "https://github.com/SatyendraBanjare/luagit2"
-  description: Tool to do do Git things in Lua. Developed using Lua-C API.
+    plt: "true"
+  url: "https://SatyendraBanjare.github.io/C-LLVM-compiler"
+  source_url: "https://github.com/SatyendraBanjare/C-LLVM-compiler"
+  description: C to LLVM compiler.

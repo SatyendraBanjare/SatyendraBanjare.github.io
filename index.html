@@ -4,8 +4,49 @@ layout: default
 {% assign posts_count = (paginator.posts | size) %}
 
 <div class="home">
+  <div class="row-abt" style="border-bottom: thin solid #f3f3f3">
+  <div class="column-abt" style="background-color: white; max-width: 38%;">
+    <img src="{{ site.baseurl }}/images/profile.jpg" style="height:220px; width: auto ;" />
+    <div class="footer-social-icons">
+      <ul class="social-icons">
+          <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+          <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+          <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+          <li><a href="" class="social-icon"> <i class="fa fa-github"></i></a></li>
+          <li><a href="" class="social-icon"> <i class="fa fa-envelope"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div  >
+      <p> I am <strong>Satyendra Kumar Banjare</strong> final year Electrical Engineering undergraduate student at IIT Roorkee. My current interests are applications of formal methods. </p>
+      <p>I maintain my findings at the <strong>PLT</strong> section of my website.</p>
+    
+  </div>
+  <div class="statement" style="float: left; width: 100%; height: 10%; border-bottom: thin solid #f3f3f3 " >
+    <p>I believe formal methods are very powerful tools to solve a variety of complex problems ranging from computer security, Secure Machine Learning, Quantum Programming language, Differential Privacy,
+      Certified secure Database systems.</p>
+  </div>
+
+  <!-- <div class="news-abt" style="float: left; width: 100%; height: 10%;  " >
+    <h2>News</h2>
+    <ul>
+      <li>abc</li>
+      <li>abc</li>
+      <li>abc</li>
+    </ul>
+  </div> -->
+
+</div>
+
+
+
   {% if posts_count > 0 %}
     <div class="posts">
+      <div style="border-bottom: thin solid #f3f3f3;">
+        <h2>Latest Blogs</h2>
+      </div>
+      
+
       {% for post in paginator.posts %}
         <div class="post py3">
           <p class="post-meta">{{ post.date | date: site.date_format }}</p>

@@ -7,11 +7,9 @@ baseurl:     ""
 url:         "https://satyendrabanjare.github.io"
 date_format: "%b %-d, %Y"
 header_pages:
- - about.md
  - typetheory.md
  - projects.html
  - archive.html
- - contact.html
 
 # Disqus post comments
 # (leave blank to disable Disqus)
@@ -97,7 +95,7 @@ markdown:     kramdown
 redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data']
 permalink:    pretty
-paginate:     9
+paginate:     5
 sass:
   style: compressed
 plugins:
