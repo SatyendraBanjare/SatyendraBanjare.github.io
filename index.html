@@ -4,9 +4,10 @@ layout: default
 {% assign posts_count = (paginator.posts | size) %}
 
 <div class="home">
+
   <div class="row-abt" style="border-bottom: thin solid #f3f3f3">
   <div class="column-abt" style="background-color: white; max-width: 38%;">
-    <img src="{{ site.baseurl }}/images/profile.jpg" style="height:220px; width: auto ;" />
+    <img id="main-profile-pic" src="{{ site.baseurl }}/images/profile.jpg" style="height:220px; width: auto ;" />
     <div class="footer-social-icons">
       <ul class="social-icons">
           <li><a href="https://github.com/SatyendraBanjare" class="social-icon"> <i class="fa fa-github"></i></a></li>
@@ -43,6 +44,8 @@ layout: default
     </ul>
   </div> -->
 
+
+
 </div>
 
 
@@ -73,4 +76,5 @@ layout: default
   {% else %}
     <h1 class='center'>{{ site.text.index.coming_soon }}</h1>
   {% endif %}
+
 </div>

@@ -20,16 +20,68 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="site-wrap">
     {% include header.html %}
 
-    <div class="post p2 p-responsive wrap" role="main">
+    <div style="width: 100%; height: 500px; position: absolute;" >
+      <div id="feed-list-show" style=" height: 100%; width: 20%; float: right; margin-right: 2%; margin-top: 1.5%;">
+
+        <!-- <a  style="max-width:  500px;" class="twitter-timeline" href="https://twitter.com/TwitterDev/timelines/539487832448843776?ref_src=twsrc%5Etfw">National Park Tweets - Curated tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+
+
+                    <div class="feed-page-wrapper" style="padding: 15px; border: thick solid #f3f3f3; border-radius: 15px; " hidden >
+                      <div id="interesting-name" style="padding-left: 5%;" >
+                         <H2> Some Interesting Find outs </H2>
+                      </div>
+                     
+              <div class="feed-list">
+                {% for link in site.data.interesting %}
+                
+                <div class="item-feed" style="border: thin solid #f3f3f3;">
+                  <div class="user-feed"></div>
+                  
+                  <a href="{{ link.url }}">
+                  <div class="meta-feed">
+                    <h4> {{ link.name }} [ {{ link.topics }} ] </h4>
+                    <p>{{ link.description }}</p>
+                  </div>
+                  
+                  </a>
+
+
+                </div>    
+                {% endfor %}
+              </div>
+            </div>
+        
+      </div>
+    </div> 
+
+    <div class="post p2 p-responsive wrap" role="main" >
       <div class="measure">
         {{ content }}
       </div>
+</div>
     </div>
   </div>
-
   {% include footer.html %}
+  
   <!-- Place this tag in your head or just before your close body tag. -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+<!-- <script type="text/javascript">
+  
+  $(function(){
+
+    var currPath = window.location.pathname; 
+
+  if((currPath == '/' ) || (currPath == '/plt/')){ 
+    $('.feed-page-wrapper').show(); 
+  }
+
+})
+</script> -->
 
 </body>
 </html>

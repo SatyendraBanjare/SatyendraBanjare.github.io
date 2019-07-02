@@ -3,7 +3,7 @@
     repo: "luagit2"
     user: "SatyendraBanjare"
     plt:
-  url: "https://SatyendraBanjare.github.io/luagit2/"
+  url: "https://SatyendraBanjare.github.io/Dluagit2/"
   source_url: "https://github.com/SatyendraBanjare/luagit2"
   description: Tool to do do Git things in Lua. Developed using Lua-C API.
 
