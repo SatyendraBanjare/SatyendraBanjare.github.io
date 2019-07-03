@@ -4,7 +4,8 @@ comments:   true
 title:      Coq Tactics
 date:       2019-01-02 11:21:29
 summary:    Some common and useful Coq Tactics
-categories: plt
+categories: plt coq, tactics, introduction, coq theorem prover, formal methods
+keywords: coq, tactics, introduction, coq theorem prover, formal methods 
 ---
 
 These are a set of Coq tactics that I've learned while completing the various courses and solving the software foundation book.

@@ -5,6 +5,7 @@ title:      Pointer Analysis
 date:       2019-02-02 11:21:29
 summary:    Explainatory blog on Steensgaard and Andersen's pointer analysis
 categories: plt
+keywords: pointer analysis Steensgaard Andersen theoretical computer science
 ---
 
 Pointer analysis also called **Points-to analysis**  is a static code analysis technique which refers to analyzing the memory locations pointers or heap references point to and how the transformation happens. A related term called **Alias analysis** is used in compiler theory to analyze the ways to access the memory locations. 

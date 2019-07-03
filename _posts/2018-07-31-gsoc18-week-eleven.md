@@ -5,6 +5,7 @@ title:      GSoC'18 Week 11 Report
 date:       2018-7-31 12:52:29
 summary:    A small report on my eleventh week work on luagit2  
 categories: gsoc18_report
+keywords: gsoc blog report
 ---
 _Time flies by...!!_  :wink: :wink: :sweat_smile:
 

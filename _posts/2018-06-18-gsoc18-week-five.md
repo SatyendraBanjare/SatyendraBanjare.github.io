@@ -5,6 +5,7 @@ title:      GSoC'18 Week 5 Report
 date:       2018-06-18 12:52:29
 summary:    A small report on my fifth week work on luagit2  
 categories: gsoc18_report
+keywords: gsoc blog report
 ---
 
 Fifth week for me was all about improving luagit2's existing code structure to be more standardized.

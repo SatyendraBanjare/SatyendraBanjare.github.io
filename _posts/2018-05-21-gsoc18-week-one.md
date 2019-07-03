@@ -5,6 +5,7 @@ title:      GSoC'18 Week 1 Report
 date:       2018-05-20 12:52:29
 summary:    A small report on my first week work on luagit2  
 categories: gsoc18_report
+keywords: gsoc blog report
 ---
 
 The first week was Awesome. I got to know the details of the libgit2 project. I tried and tested many libgit functions and understood their implementation.

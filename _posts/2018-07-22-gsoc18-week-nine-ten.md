@@ -5,6 +5,7 @@ title:      GSoC'18 Week 9 & 10 Report
 date:       2018-7-22 12:52:29
 summary:    A small report on my ninth and tenth week work on luagit2  
 categories: gsoc18_report
+keywords: gsoc blog report
 ---
 
 These last two weeks I have completed writing lua bindings to most of the modules, all main modules are 

@@ -5,6 +5,7 @@ title:      GSoC'18 Week 8 Report
 date:       2018-07-09 12:52:29
 summary:    A small report on my eighth week work on luagit2  
 categories: gsoc18_report
+keywords: gsoc blog report
 ---
 
 This week I completed writing tests for all the modules except blame and clone.

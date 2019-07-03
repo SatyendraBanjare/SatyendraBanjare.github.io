@@ -5,6 +5,7 @@ title:      GSoC'18 Week 2 Report
 date:       2018-05-27 12:52:29
 summary:    A small report on my second week work on luagit2  
 categories: gsoc18_report
+keywords: gsoc blog report
 ---
 
 The second week passed and I learnt to write tests for my project. I understood more about libgit2's code structure.

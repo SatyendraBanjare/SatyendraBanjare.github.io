@@ -5,6 +5,7 @@ title:      SAT
 date:       2019-02-17 11:21:29
 summary:    Solving a SAT problem
 categories: plt
+keywords: Satisfiability SAT SMT solver DPLL
 ---
 
 SAT or Satisfiability type problem is the problem of determining if there exists a solution to a boolean formula. It checks if a combination of true/False values exist that evaluated the given boolean expression to true.

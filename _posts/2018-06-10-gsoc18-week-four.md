@@ -5,6 +5,7 @@ title:      GSoC'18 Week 4 Report
 date:       2018-06-10 12:52:29
 summary:    A small report on my fourth week work on luagit2  
 categories: gsoc18_report
+keywords: gsoc blog report
 ---
 
 Google Summer of Code 2018's Fourth coding week comes to end and first

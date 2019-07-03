@@ -5,6 +5,7 @@ title:      Home Automation
 date:       2018-03-17 11:21:29
 summary:    Demo Home-Automation project build using Django,raspberry pi,Xbees 
 categories: blog
+keywords: home automation django djangorestframework api xbees server global tutorial heroku admin working mobile app raspberry pi python
 ---
 
 _" This is a hobby home automation project build using Django,Raspberry Pi,Xbees with aim to learn build mobile-server connection from scratch, working with somepopular elctronic modules (Raspberry Pi and XBees). "_

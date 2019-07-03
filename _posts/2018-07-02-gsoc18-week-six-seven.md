@@ -5,6 +5,7 @@ title:      GSoC'18 Week 6 & 7 Report
 date:       2018-07-2 12:52:29
 summary:    A small report on my sixth and seventh week work on luagit2  
 categories: gsoc18_report
+keywords: gsoc blog report
 ---
 
 These Two weeks, I fixed few issues with working of the library. I also wrote new bindings to the modules and new tests.

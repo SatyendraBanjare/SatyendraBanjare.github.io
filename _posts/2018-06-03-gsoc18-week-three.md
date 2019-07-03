@@ -5,6 +5,7 @@ title:      GSoC'18 Week 3 Report
 date:       2018-06-03 12:52:29
 summary:    A small report on my third week work on luagit2  
 categories: gsoc18_report
+keywords: gsoc blog report
 ---
 
 Third week was exciting as I wrote more tests for the bindings of the functions that I wrote. 

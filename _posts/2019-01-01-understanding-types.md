@@ -5,6 +5,7 @@ title:      Understanding Types
 date:       2019-01-01 11:21:29
 summary:    More formal application of Types.
 categories: plt
+keywords: type theory types haskell typesystem logic system early works
 ---
 
 This post should serve as a basic mathematical introduction of type theory for people new to types or even a functional language programming.
