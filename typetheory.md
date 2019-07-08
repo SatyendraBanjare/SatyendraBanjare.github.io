@@ -14,7 +14,7 @@ Here are some of my experiences and findings on the topics
 
 <h2>Readings</h2>
 
-
+<div style="overflow-x:auto;">
 <table id="plt-table" style="width:100%">
   <tr>
   	<th>Name/Topic</th>
@@ -66,7 +66,7 @@ Here are some of my experiences and findings on the topics
     <td><a href="https://github.com/SatyendraBanjare/MIT-Abstract-Interpretation-16.399">Abstract Interpretation</a></td> 
   </tr> -->
 </table>
-
+</div>
 
 
 
