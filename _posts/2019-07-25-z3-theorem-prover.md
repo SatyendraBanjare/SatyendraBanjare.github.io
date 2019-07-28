@@ -57,16 +57,16 @@ Following the logical statements described above, here are the mathematical repr
 
 \\( \forall (A,B,C) \subset S \mid \\)
 
-\\[ \exists a \in A    \mid  \\]  {
+\\( \exists a \in A    \mid  \\)  {
 
-\\[ (  pos(a,t) = pos(boat,t)) \wedge (pos(a,t+1) = pos(boat,t+1) ) \\]
+\\( (  pos(a,t) = pos(boat,t)) \wedge (pos(a,t+1) = pos(boat,t+1) ) \\)
 there should be atleast one position change with boat.
-\\[ \wedge \\]
+\\( \wedge \\)
 
-\\[(\exists b \in B  \mid (b \ne a ) \wedge  (pos(b,t+1) = pos(boat,t+1)) ) \\]
+\\((\exists b \in B  \mid (b \ne a ) \wedge  (pos(b,t+1) = pos(boat,t+1)) ) \\)
 there maybe another position change of element other than previous one.
-\\[ \wedge  \\]
-\\[ (\exists c \in C \mid (c \ne a \wedge c \ne b ) \wedge  (pos(c,t+1) = pos(c,t)) ) \\]
+\\( \wedge  \\)
+\\( (\exists c \in C \mid (c \ne a \wedge c \ne b ) \wedge  (pos(c,t+1) = pos(c,t)) ) \\)
 element may remain on the same side.
 }
 
