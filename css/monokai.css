@@ -1,3 +1,6 @@
+.MathJax_Display {
+  text-align: left !important;
+}
 
 .wall-item {
   display: block;
