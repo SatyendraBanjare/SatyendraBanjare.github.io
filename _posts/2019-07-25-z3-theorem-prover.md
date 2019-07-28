@@ -69,12 +69,39 @@ there maybe another position change of element other than previous one.
 \\[ (\exists c \in C \mid (c \ne a \wedge c \ne b ) \wedge  (pos(c,t+1) = pos(c,t)) ) \\]
 element may remain on the same side.
 }
+
+### Codeout
+Let us now write the code !!
+
+(Here Can1 , Can2 ,Can3 correspond to Wife1 , Wife2, Wife3)
+
+first let's start off by declarations.
+
+<script src="https://gist.github.com/SatyendraBanjare/632f522adefa8b9c6fad202d13989b29.js"></script>
+
+then adding clauses one by one.
+
+<script src="https://gist.github.com/SatyendraBanjare/c4175974a5dc24078adf0910145786c1.js"></script>
+
+finally checking our model and printing solution.
+<script src="https://gist.github.com/SatyendraBanjare/1d1c9f6fe6fe3e34b6e89039d26d463b.js"></script>
+
+here is the output.
+<script src="https://gist.github.com/SatyendraBanjare/e897f0a3d93e844aaef8864ce94d084b.js"></script>
+
+here is complete code.
+<script src="https://gist.github.com/SatyendraBanjare/94aa1e54e48c600a3ccb5b523b7766b0.js"></script>
+
+Hope you Enjoyed it.
+
 ## References
+Here are some awesome references definitely worth checking in.
 <div style="overflow-x:auto;" >
 	<ul>
 		<li>https://rise4fun.com/Z3/</li>
 		<li>http://theory.stanford.edu/~nikolaj/programmingz3.html</li>
-		<li>https://yurichev.com/writings/SAT_SMT_by_example.pdf</li>
+		<li>https://yurichev.com/writings/SAT_SMT_by_example.pdf , awesome book for anyone at any level.</li>
+		<li>https://stackoverflow.com/questions/26562177/river-crossing-puzzle-in-z3  , the inspiration to this blog.</li>
 	</ul>
 </div>
 
