@@ -1,7 +1,7 @@
 ---
 layout:     post
 comments:   true
-title:      Z3 theorem prover tutorial
+title:      Z3 theorem prover 
 date:       2019-07-25 11:21:29
 summary:    Simple tutorial explaining on solving River Crossing Problem in z3.
 categories: plt
@@ -39,7 +39,7 @@ Let's now model this puzzle in a logic system :
 Following the logical statements described above, here are the mathematical representation statements respectively.
 
 <p>Statement 1.</p>
-
+<span>
 \\( (time < timeMax) \wedge (pos(boat,t) \ne pos(boat,t+1))  \\) 
 
 <p>Statement 2.</p>
@@ -55,7 +55,7 @@ Following the logical statements described above, here are the mathematical repr
 )
 <p>Statement 3.</p>
 
-\\[ \forall (A,B,C) \subset S \mid \\]
+\\( \forall (A,B,C) \subset S \mid \\)
 
 \\[ \exists a \in A    \mid  \\]  {
 
@@ -69,6 +69,7 @@ there maybe another position change of element other than previous one.
 \\[ (\exists c \in C \mid (c \ne a \wedge c \ne b ) \wedge  (pos(c,t+1) = pos(c,t)) ) \\]
 element may remain on the same side.
 }
+
 
 ### Codeout
 Let us now write the code !!
