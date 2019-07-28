@@ -2,7 +2,7 @@
 layout:     post
 comments:   true
 title:      Understanding  Linear Temporal Logic in COQ
-date:       2019-06-25 11:21:29
+date:       2019-07-10 11:21:29
 summary:    A simple blog on proving properties of Linear temporal logics in coq proof assistant.
 categories: plt
 keywords: ltl coq tutorial 
