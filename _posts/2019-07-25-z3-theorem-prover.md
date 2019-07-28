@@ -1,11 +1,11 @@
 ---
 layout:     post
 comments:   true
-title:      Z3 theorem prover
+title:      Z3 theorem prover tutorial
 date:       2019-07-25 11:21:29
-summary:    Exploring Z3 theorem prover.
+summary:    Simple tutorial explaining on solving River Crossing Problem in z3.
 categories: plt
-keywords: Z3 theorem prover tutorial
+keywords: Z3 theorem prover tutorial  River Crossing Problem
 ---
 
 **[Z3](https://github.com/Z3Prover/z3)** is one of the latest SMT solver by Microsoft Research. I came to know about the Z3 theorem prover few months back and was super excited to learn about this tool. It is impressively powerful and capable of solving theories built upon arithmetic, fixed-size bit-vectors, extensional arrays, datatypes, uninterpreted functions, and quantifiers. It has API available in **Java** , **Ocaml** & **Python** . It's python api is easy to use. 
