@@ -84,13 +84,14 @@ We know that the likeliness of happening of an event is attributed to its Probab
 
 <div class="shaky-container" style="overflow: auto;" ><pre class="shaky" >
 
-+-------------+      +-------------------------+       +---------------------+ 
-|             |      |                         |       |                     |
-| variables --+------+-&gt; Biasing function --+-------+-----&gt;   Outcome        |
-+-------------+      +-------------------------+       +---------------------+
++-------------+      +-------------------------+        +---------------------+ 
+|             |      |                         |        |                     |
+| variables --+------+-&gt; Biasing function      |----&gt;   |   Outcome           |  
++-------------+      +-------------------------+        +---------------------+
                                  
 </pre></div>
 
+<br>
 Mathematically,
 
 \\( X = PDF(\alpha , \beta , \gamma) \\)
@@ -124,18 +125,65 @@ Bayesian Networks and Discrete Time Markov Chains are often studied in probabili
 (quoted from [Probabilistic programming - MSR](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/fose-icse2014.pdf))
 <br>
 
-Now that we have an idea of it's syntax and representation, let's discuss about the working semantics of such probabilistc programs. Broadly, it may be studied as:
+There are two kinds of inferences strictly based on generation (<u>synonym to program outputs for non-probabilistic programs</u>) for probabilistic systems :
 
-- **Static Analysis** : Computation Graph generation
-- **Dynamic Analysis**
+- **Static Inference** : This approach tends to `compile` probabilistic programs to probabilistic models like Bayesian Networks and then perform observation via inference algorithms.
 
-Consequently there are two kinds of inference for probabilistic systems too :
+- **Dynamic Inference** : This approach tends to `sample` probabilistic programs many times over valid running conditions and observe an approximation to desired distribution.
 
-- **Static Inference**
-- **Dynamic Inference**
+Now that we have an idea of syntax representation and runtime outputs, let's discuss about the working semantics of such probabilistc programs. <u><i>It involves propagating data as <b>probability distributions</b> and symbolically executing statements and merging data flows following a required intention</i></u>. Broadly, it may be studied as:
 
-Abstraction / Abstract Interpetation of Probabilistc Programs.
+### Static Analysis :
 
+Similar to the case of static analysis of simple non-probabilistic programs, We create a decision diagrams to analyze the data flows. First order probabilistic programs specify probabilistic models over finitely many random variables. In this part we focus on the translation of these programs into finite Decision Diagrams or graphical models. Then we can see how this translation can be exploited to adapt inference algorithms. 
+
+Using a tuple notation for models, translation can be represented using a ternary relation \\( \downarrow \\) as :
+
+\\[ \rho,\phi,e \quad \downarrow \quad G,E \\]
+
+where,
+
+\\(\rho \\) is a mapping from  procedure names possibly used in the expression to their definitions. 
+
+\\(\phi \\) is a logical predicate for the flow control context, handling the parameters' validity.
+
+*e* is the expression we intend to compile.
+
+This expression is translated to a graphical model **G** and an expression **E** in the deterministic sub-language which does not involve any <i>sample or observe</i> statements. **E** also represents the final value of the expression *e* in terms of random variabels in **G**. The vertices in **G** represent random variables and defines a probability distribution. It can be understood as weights in a graph.
+
+Different Inference rules following classical \\(\{ \frac{top}{bottom} \} \\) expressions, can be developed. Let's discuss possible semantic rules for sample and observe commands.
+
+- Sample : It can be understood as a 3 step process,
+	+ First, we translate *e* to a model with deterministic expression **E** . It should be clear that both *e* and **E** represent same probability distribution.
+	+ Second, we choose a set of random variables of the network.
+	+ Finally we convert the expression **E** into probability density or mass function **F** of distribution.
+
+- Observe : It can be understood as,
+	+ Similar to sample, we create a density function **F**.
+	+ Given a check condition, **F** may be reconstructed by slightly modifying **G**.
+
+<div style="border: thin black;border-style: dashed;padding: 5px;">
+<p>It should be noted that these are simply two kinds of command statements used to draw probabilistic inferences. In Static analysis method, we attempt to describe their working semantics, how will these 2 commands actually be expressed during execution. It should not be confused with the dynamic inferences as discussed earlier.
+</p>
+<p>We would see in follwoing section the use of <b>sample</b> and <b>observe</b> commands to develop inferences during runtime.</p>
+</div>
+
+### Dynamic Analysis :
+
+The main challenge of Dynamic analysis is to smartly reject out vague distributions so as to avoid unnecessary computation. These evaluation based methods performs improved sampling at every stage and propagating observations onto next probabilistic assignment. It consists of two steps :
+
+- Propagation of inferences through a pre-image operation analysis. It seeks to preserve the original program semantics. It can be realized by having an observe command to evaluate every inference.
+
+- Perform Sampling over transformed probabilistic programs. These can further be studied as :
+	+ Likelihood weighting : This is the simplest method that involves tuning some of the variables of **G** to improve programs. It aims to approximate the posterior distributions with a set of weighted samples. 
+	+ Metropolis-Hashtings : This method uses the definition of aceptance ratio based on different factors. Struggle is improving the ratio.
+	+ Sequential Monte Carlo : SMC sampling technique helps in case when there is a higher number of sample expressions.
+
+<hr>
+
+### Model Checking Probabilistic Programs
+
+Probabilistic Model Checking involves  checking through model checkers like [PRISM](https://www.prismmodelchecker.org/) if  a  probabilistic  model  satisfies  a  quantitative specification. Different Probabilistic models like Discrete Time Markov Chains (DTMC) , Continuous Time Markov Chains (CTMC) and Markov Decision Process (MDP) have been studied.
 
 <hr>
 
