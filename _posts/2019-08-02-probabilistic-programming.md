@@ -3,7 +3,7 @@ layout:     post
 comments:   true
 title:      Probabilistic Programming
 date:       2019-08-02 11:21:29
-summary:    An attempt to understand Probabilistic programming using first principles of Programming Language theory.
+summary:    An attempt to understand Probabilistic programming by using Programming Language theory approach.
 categories: plt
 keywords: probabilistic programming model programming languages theory
 ---
