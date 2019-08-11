@@ -1,12 +1,11 @@
 .site-header {
  
   padding-bottom: $space-3;
-  border-top: thin solid #50c878;
+  border-top: thin solid black;;
   border-bottom: thin solid #e3e3e3;
 }
 
 .site-header a {
-  color: #333;
   font-size: $h3;
   font-weight: 300;
   background-image: none;
@@ -24,13 +23,6 @@
   color: #666;
 }
 
-.site-header nav a:hover,
-.site-header nav a:focus,
-.site-header nav a:active {
-  color: #444;
-  opacity: 1;
-  border-bottom: 2px solid #444;
-}
 
 .site-nav a + a {
   margin-left: 1em;

@@ -73,8 +73,8 @@ and a simple <u><i>Syntactical Comparison</i></u> would be something like :
 		<th class="tg-c3ow">Probabilistic Progams</th>
 	</tr>
 	<tr> 
-		<td class="tg-c3ow"><img src="{{ site.baseurl }}/images/imperative.jpg"></td>
-		<td class="tg-c3ow"><img src="{{ site.baseurl }}/images/prob.png"></td>
+		<td class="tg-c3ow"><img src="{{ site.baseurl }}/images/prob/imperative.jpg"></td>
+		<td class="tg-c3ow"><img src="{{ site.baseurl }}/images/prob/prob.png"></td>
 	</tr>
 </table>
 
@@ -113,13 +113,13 @@ Bayesian Networks and Discrete Time Markov Chains are often studied in probabili
 <table class="tg">
 	<tr >
 		<td class="tg-c3ow" >Bayesian Network</td>
-		<td class="tg-c3ow"><img src="{{ site.baseurl }}/images/bay-diag.png"></td>
-		<td class="tg-c3ow"><img src="{{ site.baseurl }}/images/bay-code.png"></td>
+		<td class="tg-c3ow"><img src="{{ site.baseurl }}/images/prob/bay-diag.png"></td>
+		<td class="tg-c3ow"><img src="{{ site.baseurl }}/images/prob/bay-code.png"></td>
 	</tr>
 	<tr >
 		<td class="tg-c3ow" >Discrete Time Markov Chains</td>
-		<td class="tg-c3ow"><img src="{{ site.baseurl }}/images/dtmc-diag.png"></td>
-		<td class="tg-c3ow"><img src="{{ site.baseurl }}/images/dtmc-code.png"></td>
+		<td class="tg-c3ow"><img src="{{ site.baseurl }}/images/prob/dtmc-diag.png"></td>
+		<td class="tg-c3ow"><img src="{{ site.baseurl }}/images/prob/dtmc-code.png"></td>
 	</tr>
 </table>
 (quoted from [Probabilistic programming - MSR](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/fose-icse2014.pdf))
