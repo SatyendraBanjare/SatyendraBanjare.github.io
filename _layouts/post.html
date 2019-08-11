@@ -74,7 +74,7 @@ s.setAttribute('data-timestamp', +new Date());
   <h3 class="related-post-title">{{ site.text.post.related_posts }}</h3>
   {% for post in site.related_posts %}
     <div class="post ml2">
-      <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
+      <a style="text-decoration: none;" href="{{ post.url | prepend: site.baseurl }}" class="post-link">
         <h4 class="post-title">{{ post.title }}</h4>
         <p class="post-summary">{{ post.summary }}</p>
       </a>
