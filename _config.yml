@@ -4,7 +4,7 @@ email:       satyendrabanjare99@gmail.com
 author:      Satyendra Banjare
 description: "Website of Satyendra Kumar Banjare, Undergraduate student of IIT Roorkee"
 baseurl:     ""
-url:         "https://satyendrabanjare.com"
+url:         "https://satyendrabanjare.github.io"
 date_format: "%b %-d, %Y"
 header_pages:
  - typetheory.md
