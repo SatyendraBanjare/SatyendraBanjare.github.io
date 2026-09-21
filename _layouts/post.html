@@ -7,22 +7,39 @@ layout: default
 {% assign minutes = 1 %}
 {% endif %}
 
-<div class="post-header mb2">
+<header class="post-header container-narrow">
   <h1>{{ page.title }}</h1>
-  <span class="post-meta">{{ page.date | date: site.date_format }}</span><br>
-  {% if page.update_date %}
-    <span class="post-meta">{{ site.text.post.updated }}: {{ page.update_date | date: site.date_format }}</span><br>
-  {% endif %}
-  <span class="post-meta small">
-  {% if page.minutes %}
-    {{ page.minutes }}  minute(s) read {{ site.text.post.minute_read }}
-  {% else %}
-    {{ minutes }} minute(s) read{{ site.text.post.minute_read }}
-  {% endif %}
-  </span>
-</div>
+  {% if page.summary %}<p class="lede">{{ page.summary }}</p>{% endif %}
+  <div class="author-line">
+    <img src="{{ site.baseurl }}/images/profile.jpg" alt="">
+    <span>
+      <strong>{{ site.author }}</strong>
+      {{ page.date | date: site.date_format }}{% if page.update_date %} &middot; {{ site.text.post.updated }}: {{ page.update_date | date: site.date_format }}{% endif %}
+      &middot; {% if page.minutes %}{{ page.minutes }}{% else %}{{ minutes }}{% endif %} min read
+    </span>
+  </div>
+</header>
 
-<article class="post-content">
+<div class="post-layout">
+<aside class="post-toc">
+  <div id="post-toc" hidden>
+    <div class="toc-title">On this page</div>
+    <ul class="toc-list" id="toc-list"></ul>
+  </div>
+  {% if page.categories.size > 0 %}
+  <div class="post-cats">
+    <div class="toc-title">Categories</div>
+    <ul class="cat-list">
+      {% for c in page.categories %}
+        {% assign cat = c | remove: ',' | replace: '_report', '' | replace: '_', ' ' | strip %}
+        {% if cat != '' %}<li>{{ cat }}</li>{% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+</aside>
+<div class="post-main">
+<article class="post-content" id="post-content">
   {{ content }}
 </article>
 
@@ -81,3 +98,61 @@ s.setAttribute('data-timestamp', +new Date());
     </div>
   {% endfor %}
 {% endif %}
+</div>
+</div>
+
+<script>
+(function () {
+  var article = document.getElementById('post-content');
+  var toc = document.getElementById('post-toc');
+  var list = document.getElementById('toc-list');
+  if (!article || !toc || !list) return;
+
+  var heads = article.querySelectorAll('h1, h2, h3, h4');
+  if (heads.length < 2) return;
+
+  var min = 4, used = {}, prev = -1;
+  heads.forEach(function (h) { min = Math.min(min, +h.tagName.charAt(1)); });
+
+  var links = [];
+  heads.forEach(function (h) {
+    var text = h.textContent.trim();
+    if (!text) return;
+    if (!h.id) {
+      var base = text.toLowerCase().replace(/[^\w]+/g, '-').replace(/^-+|-+$/g, '') || 'section';
+      var id = base, n = 1;
+      while (used[id] || document.getElementById(id)) id = base + '-' + (++n);
+      h.id = id;
+    }
+    used[h.id] = true;
+    var li = document.createElement('li');
+    var lvl = Math.min(+h.tagName.charAt(1) - min, prev + 1);
+    prev = lvl;
+    li.className = 'toc-l' + lvl;
+    var a = document.createElement('a');
+    a.href = '#' + h.id;
+    a.textContent = text;
+    li.appendChild(a);
+    list.appendChild(li);
+    links.push({ head: h, link: a });
+  });
+  if (links.length < 2) return;
+  toc.hidden = false;
+
+  var current = null;
+  function onScroll() {
+    var y = window.scrollY + 110, active = links[0];
+    for (var i = 0; i < links.length; i++) {
+      if (links[i].head.getBoundingClientRect().top + window.scrollY <= y) active = links[i];
+    }
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) active = links[links.length - 1];
+    if (active === current) return;
+    if (current) current.link.classList.remove('active');
+    active.link.classList.add('active');
+    current = active;
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  onScroll();
+})();
+</script>

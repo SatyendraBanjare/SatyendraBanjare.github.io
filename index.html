@@ -1,80 +1,85 @@
 ---
 layout: default
 ---
-{% assign posts_count = (paginator.posts | size) %}
+{% assign posts_count = paginator.posts | size %}
 
-<div class="home">
-
-  <div class="row-abt" style="border-bottom: thin solid #f3f3f3">
-  <div class="column-abt" style="background-color: white; max-width: 27%;">
-    <img id="main-profile-pic" src="{{ site.baseurl }}/images/profile.jpg" style=" width: auto ; max-height: 250px;" />
-    <div class="footer-social-icons">
-      <ul class="social-icons">
-          <li><a href="https://github.com/SatyendraBanjare" class="social-icon"> <i class="fa fa-github"></i></a></li>
-          <li><a href="mailto:satyendrabanjare99@gmail.com" class="social-icon"> <i class="fa fa-envelope"></i></a></li>
-          <li><a href="https://www.facebook.com/satyendra.banjare" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
-          <li><a href="https://twitter.com/me_satyendra" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/satyendra-banjare-554ab2135/" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
-      </ul>
-    </div>
-  </div>
-  <div  >
-      <p> I am <strong>Satyendra Kumar Banjare</strong> final year Electrical Engineering undergraduate student at IIT Roorkee. My current interests are applications of formal methods. </p>
-      <p>I maintain my findings at the <strong>PLT</strong> section of my website.</p>
-      <p>I have created a list of research and industry application focused materials and resources on the topic. It can be found at the <strong>Resources</strong> section of my website.</p>
-  </div>
-  <div class="statement" style="float: left; width: 100%; height: 10%; border-bottom: thin solid #f3f3f3 " >
-    <p>I believe formal methods are set of powerful tools to solve a variety of complex problems ranging from
-       <a href="https://iris-project.org/">Programming Language Research</a>, 
-       <a href="https://project-everest.github.io/">Computer security</a>
-       <a href="https://github.com/project-everest/hacl-star/blob/fstar-master/README.EverCrypt.md">Crptography</a>,
-       <a href="https://seclab.stanford.edu/AdvML2017/slides/jacob-workshop-slides.pdf">Secure Machine Learning</a> ,
-       <a href="https://arxiv.org/pdf/1803.00699.pdf">Quantum Programming language</a> , 
-       <a href="https://simons.berkeley.edu/sites/default/files/docs/6720/gaboardi.pdf">Differential Privacy</a> ,
-      <a href="https://link.springer.com/content/pdf/10.1007/BFb0094849.pdf">Creating secure Database systems</a>  
-    and many more.</p>
-  </div>
-
-  <!-- <div class="news-abt" style="float: left; width: 100%; height: 10%;  " >
-    <h2>News</h2>
-    <ul>
-      <li>abc</li>
-      <li>abc</li>
-      <li>abc</li>
+<section class="intro">
+  <img class="intro-avatar" src="{{ site.baseurl }}/images/profile.jpg" alt="{{ site.author }}">
+  <div class="intro-body">
+    <h1>Satyendra Kumar Banjare</h1>
+    <p>Final year Electrical Engineering undergraduate at IIT Roorkee. My current interests are applications of formal methods. I maintain my findings in the <strong>PLT</strong> section and a curated list of research and industry oriented materials in the <strong>Resources</strong> section of this website.</p>
+    <p class="intro-statement">I believe formal methods are a set of powerful tools to solve a variety of complex problems ranging from
+       <a href="https://iris-project.org/">Programming Language Research</a>,
+       <a href="https://project-everest.github.io/">Computer security</a>,
+       <a href="https://github.com/project-everest/hacl-star/blob/fstar-master/README.EverCrypt.md">Cryptography</a>,
+       <a href="https://seclab.stanford.edu/AdvML2017/slides/jacob-workshop-slides.pdf">Secure Machine Learning</a>,
+       <a href="https://arxiv.org/pdf/1803.00699.pdf">Quantum Programming languages</a>,
+       <a href="https://simons.berkeley.edu/sites/default/files/docs/6720/gaboardi.pdf">Differential Privacy</a>,
+       <a href="https://link.springer.com/content/pdf/10.1007/BFb0094849.pdf">Secure Database systems</a>
+       and many more.</p>
+    <ul class="social-links">
+      <li><a href="https://github.com/SatyendraBanjare" aria-label="GitHub"><i class="fa fa-github"></i></a></li>
+      <li><a href="mailto:satyendrabanjare99@gmail.com" aria-label="Email"><i class="fa fa-envelope"></i></a></li>
+      <li><a href="https://www.facebook.com/satyendra.banjare" aria-label="Facebook"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="https://twitter.com/me_satyendra" aria-label="Twitter"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/satyendra-banjare-554ab2135/" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
     </ul>
-  </div> -->
+  </div>
+</section>
 
+{% if posts_count > 0 %}
+  <h2 class="section-title">{% if paginator.page == 1 %}Latest{% else %}More{% endif %} posts</h2>
 
+  {% for post in paginator.posts %}
+    {% assign tag = post.categories | first | replace: '_report', '' | replace: '_', ' ' %}
+    {% capture summary %}{% if post.summary %}{{ post.summary }}{% else %}{{ post.excerpt | strip_html | truncatewords: 30 }}{% endif %}{% endcapture %}
 
-</div>
-
-
-
-  {% if posts_count > 0 %}
-    <div class="posts">
-      <div style="border-bottom: thin solid #f3f3f3;">
-        <h2>Latest Blogs</h2>
-      </div>
-      
-
-      {% for post in paginator.posts %}
-        <div class="post py3">
-          <p class="post-meta">{{ post.date | date: site.date_format }}</p>
-          <a style="text-decoration: none;" href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
-          <span class="post-summary">
-            {% if post.summary %}
-              {{ post.summary }}
-            {% else %}
-              {{ post.excerpt }}
-            {% endif %}
-          </span>
-        </div>
+    {% assign thumb = post.image %}
+    {% if thumb %}{% assign thumb = thumb | prepend: site.baseurl %}{% else %}
+      {% assign imgs = post.content | split: '<img ' %}
+      {% for part in imgs offset: 1 %}
+        {% unless thumb %}
+          {% if part contains 'src="' %}
+            {% assign cand = part | split: 'src="' | last | split: '"' | first %}
+            {% unless cand contains 'shields.io' or cand contains 'badge' %}{% assign thumb = cand %}{% endunless %}
+          {% endif %}
+        {% endunless %}
       {% endfor %}
-    </div>
+    {% endif %}
 
-    {% include pagination.html %}
-  {% else %}
-    <h1 class='center'>{{ site.text.index.coming_soon }}</h1>
-  {% endif %}
+    {% capture card %}
+      <article class="card{% if forloop.first and paginator.page == 1 %} featured{% endif %}">
+        <span class="card-cover"></span>
+        <div class="card-inner">
+          <div class="card-body">
+            <div class="card-tag">{{ tag }}</div>
+            <h3 class="card-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+            <div class="card-text">{{ summary }}</div>
+            <div class="card-meta">
+              <img src="{{ site.baseurl }}/images/profile.jpg" alt="">
+              <span><strong>{{ site.author }}</strong>{{ post.date | date: site.date_format }}</span>
+            </div>
+          </div>
+          {% if thumb %}
+          <a class="card-thumb" href="{{ post.url | prepend: site.baseurl }}" tabindex="-1" aria-hidden="true">
+            <img src="{{ thumb }}" alt="" loading="lazy">
+          </a>
+          {% endif %}
+        </div>
+      </article>
+    {% endcapture %}
 
-</div>
+    {% if forloop.first and paginator.page == 1 %}
+      {{ card }}
+      <div class="card-grid">
+    {% else %}
+      {% if forloop.first %}<div class="card-grid">{% endif %}
+      {{ card }}
+    {% endif %}
+    {% if forloop.last %}</div>{% endif %}
+  {% endfor %}
+
+  {% include pagination.html %}
+{% else %}
+  <h2 class="section-title">Coming soon...</h2>
+{% endif %}
